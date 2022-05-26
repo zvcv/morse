@@ -49,3 +49,5 @@ function translate_to_morse() {
     // hasil outputt tadi ditunjukkan lewat alert
 
 }
+
+// a
