@@ -1,26 +1,221 @@
+<!--
+    submission dicoding
+    Belajar Dasar Pemrograman Web
+
+    Husni Arafat Ulinnuha
+    zxcv13
+-->
+
 <!DOCTYPE html>
 
 <head>
-    <title>Morse Translator</title>
+    <title>Morse Generator</title>
 
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" href="img/favico.png">
     <script src="script.js"></script>
-
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 
 <body>
 
-    <h1>Welcome to The Morse Translator</h1>
+    <!-- elemen header -------------------------------------------------------------------------------------- -->
+    <header id="home">
 
-    <div>
-        <input name="alpha_to_morse" id="alpha_to_morse" type="text">
+        <div class="jumbotron">
+            <h1>Welcome to The Morse Generator</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home"><img src="img/homeicio.png" alt="" width="20px"></a></li>
+                <li> <a href="#learn">Learn Morse</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="content">
+
+        <textarea name="alpha_to_morse" id="alpha_to_morse" type="text" placeholder="input text here"></textarea>
         <button id="translate_button" onclick="translate_to_morse();" href="javascript:void(0);" title="Translate">
-            Translate</button>
+            Generate</button>
+
     </div>
+
+    <!-- elemen footer -------------------------------------------------------------------------------------- -->
+    <footer>
+        &copy; 2022 | zxcv - Husni A Ulinnuha
+    </footer>
+
+    <div id="learn" class="mainnn">
+        <!-- elemen main ---------------------------------------------------------------------------------------- -->
+        <main>
+
+            <!-- elemen article --------------------------------------------------------------------------------- -->
+            <section>
+                <article>
+                    <h2>Kode Morse</h2>
+
+                    <p>Kode Morse atau 'Sandi Morse' adalah sistem representasi huruf, angka, tanda baca dan
+                        sinyal
+                        <span class="titikgaris">dengan menggunakan kode titik dan garis</span> yang disusun
+                        mewakili
+                        karakter tertentu pada
+                        alfabet atau sinyal (pertanda) tertentu yang disepakati penggunaannya di seluruh dunia.
+                        Kode
+                        Morse
+                        diciptakan oleh Samuel F.B. Morse dan Alfred Vail pada tahun 1835.</p>
+
+                    <blockquote cite="https://id.wikipedia.org/wiki/Kode_Morse">
+                        <p class="wiki">Dari Wikipedia bahasa Indonesia, ensiklopedia bebas</p>
+                    </blockquote>
+                </article>
+
+                <br>
+
+                <article>
+                    <h2>Kode morse dalam kepramukaan</h2>
+
+                    <p>Kode morse juga digunakan dan dipelajari di dunia kepramukaan atau kepanduan. Dalam dunia
+                        kepramukaan
+                        kode morse disampaikan menggunakan senter atau peluit pramuka. Kode morse disampaikan
+                        dengan
+                        cara
+                        menuip
+                        peluit dengan durasi pendek untuk mewakili titik dan meniup peluit dengan durasi panjang
+                        untuk
+                        mewakili
+                        garis.
+                        <br>
+                        Untuk menghafalkan kode ini digunakan metode yang mengelompokkan huruf-huruf berdasarkan
+                        bagaimana
+                        huruf
+                        ini diwakili oleh kode morsenya. Pengelompokan tersebut antara lain Alphabet dengan kode
+                        morse
+                        yang
+                        berkebalikan antara titik dan garis, misalnya huruf K yang diwakili oleh -·–
+                        berkebalikan dengan
+                        huruf R
+                        yang diwakili oleh ·–· dan alfabet dengan kode morse berlawanan. Misalnya, huruf A yang
+                        diwakili
+                        oleh ·–
+                        dan huruf N yang diwakili oleh –·.
+                        <br>
+                        Kemampuan menerima dan mengirimkan kode morse merupakan salah satu dari kecakapan yang
+                        dapat
+                        menerima
+                        Tanda Kecakapan Khusus. Kode morse juga digunakan sebagai kunci dalam memecahkan Sandi
+                        Rumput.
+                    </p>
+
+                    <blockquote cite="https://id.wikipedia.org/wiki/Kode_Morse">
+                        <p class="wiki">Dari Wikipedia bahasa Indonesia, ensiklopedia bebas</p>
+                    </blockquote>
+                </article>
+
+                <br>
+
+                <article>
+                    <h2>Kode Morse</h2>
+
+                    <table class="morse-a-z">
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>H</td>
+                            <td>I</td>
+                            <td>J</td>
+                            <td>K</td>
+                            <td>L</td>
+                            <td>M</td>
+                            <td>N</td>
+                            <td>O</td>
+                            <td>P</td>
+                            <td>Q</td>
+                            <td>R</td>
+                            <td>S</td>
+                            <td>T</td>
+                            <td>U</td>
+                            <td>V</td>
+                            <td>W</td>
+                            <td>X</td>
+                            <td>Y</td>
+                            <td>Z</td>
+                        </tr>
+                        <tr>
+                            <td>. -</td>
+                            <td>- . . .</td>
+                            <td>- . - .</td>
+                            <td>- . .</td>
+                            <td>.</td>
+                            <td>. . - .</td>
+                            <td>- - .</td>
+                            <td>. . . .</td>
+                            <td>. . </td>
+                            <td>. - - -</td>
+                            <td>- . -</td>
+                            <td>. - . .</td>
+                            <td>- -</td>
+                            <td>- .</td>
+                            <td>- - -</td>
+                            <td>. - - .</td>
+                            <td>- - . -</td>
+                            <td>. - .</td>
+                            <td>. . .</td>
+                            <td>-</td>
+                            <td>. . -</td>
+                            <td>. . . -</td>
+                            <td>. - -</td>
+                            <td>- . . -</td>
+                            <td>- . - -</td>
+                            <td>- - . .</td>
+                        </tr>
+                    </table>
+                    <br>
+                </article>
+                <br>
+            </section>
+
+        </main>
+
+        <!-- elemen aside --------------------------------------------------------------------------------------- -->
+        <aside>
+            <h1>About Me</h1>
+
+            <img src="img/self.jpg" alt="" width="100%">
+
+            <p>Husni A Ulinnuha</p>
+            <p>zxcv13</p>
+
+            <div class="sosmed">
+                <table class="sosmed-tab">
+                    <tr>
+                        <td><a href="https://www.linkedin.com/in/husni-ulinnuha/"><img src="img/linkedin.png" alt=""
+                                    width="28px"></a></td>
+                        <td> <a href="https://www.instagram.com/ulinnuha.log/"><img src="img/ig.png" alt=""
+                                    width="30px"></a></td>
+                        <td><a href="https://github.com/zvcv"><img src="img/gh.png" alt="" width="43px"></a>
+                        </td>
+                        <td><a href="https://www.dicoding.com/users/zxcv13"><img class="dcd" src="img/dcd.png" alt=""
+                                    width="30px"></a></td>
+                    </tr>
+                </table>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+
 
 </body>
 
 </html>
-
-// a

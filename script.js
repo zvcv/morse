@@ -32,7 +32,7 @@ function translate_to_morse() {
         else if (user_textt.charCodeAt(i) == 32) {
             // cek di ascii table kalo dia nomer 32 berarti doi spasi
             // langsung kasih separator "/"
-            outputt += ((dotdash[26]) + " ");
+            outputt += (" " + (dotdash[26]) + " ");
         }
 
         else {
@@ -40,6 +40,7 @@ function translate_to_morse() {
             // outputnya langsung simbol itu
             outputt += (user_textt[i]);
         }
+
     }
     outputt += ("\n");
 
@@ -49,5 +50,8 @@ function translate_to_morse() {
     // hasil outputt tadi ditunjukkan lewat alert
 
 }
+
+document.write(outputt);
+
 
 // a
