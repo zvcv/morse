@@ -1,3 +1,4 @@
-untuk memenuhi tugas Dicoding - Dasar Pemrograman Web
+# untuk memenuhi tugas Dicoding - Dasar Pemrograman Web
 
-visit https://zvcv.github.io/morse/
+access thru here
+>> https://zvcv.github.io/morse/
